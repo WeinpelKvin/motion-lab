@@ -61,4 +61,12 @@ export const projects: Project[] = [
     description: 'Boids that steer by separation, alignment and cohesion. Move the cursor to interact.',
     component: lazy(() => import('./projects/Flocking')),
   },
+  {
+    id: 'kinetic-type',
+    label: 'Kinetic Type',
+    tag: 'typography',
+    description: 'A headline whose letters gain weight near the cursor. Tap or click to send a ripple through it.',
+    added: '2026-10-03',
+    component: lazy(() => import('./projects/KineticType')),
+  },
 ]

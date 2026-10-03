@@ -4,8 +4,8 @@
   --hover: #0a0a0a;
   --border: #1c1c1c;
   --text: #e8e8e8;
-  --text-dim: #8a8a8a;
-  --text-faint: #5c5c5c;
+  --text-dim: #e8e8e8;
+  --text-faint: #a1a1a1;
   --accent: #0088ff;
   --font: 'JetBrains Mono', ui-monospace, monospace;
 }
@@ -115,7 +115,7 @@ button { font-family: inherit; }
 .nav-item[aria-current='true'] { background: var(--surface); border-left-color: var(--accent); }
 
 .nav-index {
-  font-size: 10px;
+  font-size: 14px;
   color: var(--text-faint);
   min-width: 16px;
   text-align: center;
@@ -127,7 +127,7 @@ button { font-family: inherit; }
 .shell[data-collapsed='true'] .nav-text { display: none; }
 
 .nav-label {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   white-space: nowrap;
   overflow: hidden;

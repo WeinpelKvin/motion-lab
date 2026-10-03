@@ -1,0 +1,14 @@
+/* Uses the gallery's tokens from index.css. Scoped to .kt so it doesn't leak into the shell. */
+.kt {
+  container-type: inline-size;
+  width: 100%; height: 100%; overflow: hidden;
+  background: var(--bg); color: var(--text); font-family: var(--font);
+}
+
+.kt-hero { height: 100%; display: flex; flex-direction: column; justify-content: flex-end;
+  padding: clamp(20px, 5cqw, 64px); touch-action: pan-y; }
+
+.kt-h1 { margin: 0; font-size: clamp(2.4rem, 9cqw, 8rem); line-height: 1; letter-spacing: -0.02em; font-weight: 400;
+  font-variation-settings: "wght" 300; touch-action: pan-y; user-select: none; -webkit-user-select: none; }
+.kt-w { display: inline-block; white-space: nowrap; }
+.kt-l { display: inline-block; text-align: center; font-variation-settings: "wght" 300; }
