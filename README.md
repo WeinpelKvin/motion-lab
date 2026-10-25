@@ -14,4 +14,4 @@ A single-page gallery for motion experiments. Sidebar on the left, the running p
 Each project gets its own link, e.g. `index.html#/flocking`. Up/Down arrows (or j/k) step through them.
 
 ## Host it
-`dist/` is plain static files (relative paths), so it works on Netlify, Vercel, GitHub Pages, or any static host.
+https://weinpelkvin.github.io/motion-lab/#/kinetic-type
