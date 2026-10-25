@@ -69,4 +69,12 @@ export const projects: Project[] = [
     added: '2026-10-03',
     component: lazy(() => import('./projects/KineticType')),
   },
+  {
+    id: 'letter-3d',
+    label: '3D Letter',
+    tag: 'extrusion',
+    description: 'Type any letter to see it as a solid 3D shape. Drag to rotate it.',
+    added: '2026-10-25',
+    component: lazy(() => import('./projects/Letter3D')),
+  },
 ]
