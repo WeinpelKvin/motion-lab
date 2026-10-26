@@ -1,6 +1,6 @@
 /* Uses the gallery's tokens from index.css. Scoped to .kt so it doesn't leak into the shell. */
 .kt {
-  container-type: inline-size;
+  container-type: size;
   width: 100%; height: 100%; overflow: hidden;
   background: var(--bg); color: var(--text); font-family: var(--font);
 }
@@ -8,7 +8,12 @@
 .kt-hero { height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;
   padding: clamp(20px, 5cqw, 64px); touch-action: pan-y; }
 
-.kt-h1 { margin: 0; text-align: center; font-size: clamp(2.4rem, 9cqw, 8rem); line-height: 1; letter-spacing: -0.02em; font-weight: 400;
+/* Size so the longest word ("Kinetic", ~4.1em in JetBrains Mono) fills the width.
+   Floor: on narrow stages the type stays large and words break onto extra lines instead of shrinking.
+   Cap: on wide, short stages two lines still fit vertically. */
+.kt-h1 { margin: 0; text-align: center; line-height: 1;
+  font-size: clamp(20cqh, calc((100cqw - 2 * clamp(20px, 5cqw, 64px)) / 4.1), 42cqh); letter-spacing: -0.02em; font-weight: 400;
   font-variation-settings: "wght" 300; touch-action: pan-y; user-select: none; -webkit-user-select: none; }
-.kt-w { display: inline-block; white-space: nowrap; }
+/* A word moves to the next line whole when it fits there, and only splits between letters when it's wider than the line. */
+.kt-w { display: inline-block; }
 .kt-l { display: inline-block; text-align: center; font-variation-settings: "wght" 300; }
