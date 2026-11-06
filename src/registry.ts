@@ -77,4 +77,20 @@ export const projects: Project[] = [
     added: '2026-10-25',
     component: lazy(() => import('./projects/Letter3D')),
   },
+  {
+    id: 'rain-drops',
+    label: 'Rain Drops',
+    tag: 'ripples',
+    description: 'A dark pool of water. Click to drop a large raindrop; move the cursor to trail a faint neon wake.',
+    added: '2026-11-05',
+    component: lazy(() => import('./projects/RainDrops')),
+  },
+  {
+    id: 'falling-type',
+    label: 'Falling Type',
+    tag: 'physics',
+    description: 'Click to drop your letter in a random typeface and watch the pile grow. Hold to pour, or click the stage and type.',
+    added: '2026-11-05',
+    component: lazy(() => import('./projects/FallingType')),
+  },
 ]
